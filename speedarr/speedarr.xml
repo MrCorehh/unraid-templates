@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>speedarr</Name>
+  <Repository>speedarr/speedarr:latest</Repository>
+  <Registry>https://hub.docker.com/r/speedarr/speedarr</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/speedarr/Speedarr/issues</Support>
+  <Project>https://github.com/speedarr/Speedarr</Project>
+  <Overview>Speedarr monitors your Plex streams and dynamically throttles uploads to prevent buffering.&#13;
+Streaming always gets priority. Will also balance multiple download clients.&#13;
+&#13;
+Main Features&#13;
+&#13;
+- Real-time dashboard with bandwidth charts, active stream monitoring, and stream history&#13;
+- Support for qBittorrent, SABnzbd, NZBGet, Transmission, and Deluge&#13;
+- Separate upload and download management with per-client allocation&#13;
+- Scheduled bandwidth limits for time-based rules (e.g. different speeds during peak or off-peak)&#13;
+- Temporary speed limit overrides with automatic expiration</Overview>
+  <Category>Downloaders: Tools: Other: MediaApp:Other MediaServer:Other</Category>
+  <WebUI>http://[IP]:[PORT:9494]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/MrCorehh/unraid-templates/main/speedarr/speedarr.xml</>
+  <Icon>https://raw.githubusercontent.com/speedarr/Speedarr/main/docs/logos/speedarr.png</Icon>
+  <Config Name="Config Path" Target="/data" Default="/mnt/user/appdata/speedarr" Mode="rw" Description="Persistent data storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/speedarr</Config>
+  <Config Name="Web UI Port" Target="9494" Default="9494" Mode="tcp" Description="Web interface port" Type="Port" Display="always" Required="true" Mask="false">9494</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID for file permissions" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID for file permissions" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+</Container>
