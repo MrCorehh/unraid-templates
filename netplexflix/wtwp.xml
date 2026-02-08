@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>wtwp</Name>
+  <Repository>netplexflix/wtwp:latest</Repository>
+  <Registry>https://hub.docker.com/r/netplexflix/wtwp</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/netplexflix/What-to-watch-on-Plex/issues</Support>
+  <Project>https://github.com/netplexflix/What-to-watch-on-Plex</Project>
+  <ReadMe>https://github.com/netplexflix/What-to-watch-on-Plex?tab=readme-ov-file#configuration</ReadMe>
+  <Overview>What to Watch?&#13;
+&#13;
+Decide what to watch on your Plex server by swiping cards based on your group's preferences.&#13;
+Find a Movie or TV Show everyone wants to watch.</Overview>
+  <Category>Tools: MediaApp:Other</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/MrCorehh/unraid-templates/main/netplexflix/wtwp.xml</>
+  <Icon>https://raw.githubusercontent.com/MrCorehh/unraid-templates/main/netplexflix/wtwp.png</Icon>
+  <ExtraParams>--user 99:100</ExtraParams>
+<DonateText>Buy the original developer a Coffee</DonateText>
+<DonateLink>https://www.buymeacoffee.com/neekokeen</DonateLink>
+  <Config Name="/app/data" Target="/app/data" Default="/mnt/user/appdata/wtwp" Mode="rw" Description="Persistent data storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/wtwp</Config>
+  <Config Name="WEBUI_PORT" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Australia/Brisbane</Config>
+  <Config Name="DATA_PATH" Target="DATA_PATH" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/app/data</Config>
+  <Config Name="NODE_ENV" Target="NODE_ENV" Default="production" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">production</Config>
+</Container>
