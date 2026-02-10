@@ -20,7 +20,7 @@ Main Features&#13;
 - Temporary speed limit overrides with automatic expiration</Overview>
   <Category>Downloaders: Tools: Other: MediaApp:Other MediaServer:Other</Category>
   <WebUI>http://[IP]:[PORT:9494]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/MrCorehh/unraid-templates/main/speedarr/speedarr.xml</>
+  <TemplateURL>https://raw.githubusercontent.com/MrCorehh/unraid-templates/main/speedarr/speedarr.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/speedarr/Speedarr/main/docs/logos/speedarr.png</Icon>
   <Config Name="Config Path" Target="/data" Default="/mnt/user/appdata/speedarr" Mode="rw" Description="Persistent data storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/speedarr</Config>
   <Config Name="Web UI Port" Target="9494" Default="9494" Mode="tcp" Description="Web interface port" Type="Port" Display="always" Required="true" Mask="false">9494</Config>
