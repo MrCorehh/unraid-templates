@@ -15,7 +15,7 @@ Decide what to watch on your Plex server by swiping cards based on your group's 
 Find a Movie or TV Show everyone wants to watch.</Overview>
   <Category>Tools: MediaApp:Other</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/MrCorehh/unraid-templates/main/netplexflix/wtwp.xml</>
+  <TemplateURL>https://raw.githubusercontent.com/MrCorehh/unraid-templates/main/netplexflix/wtwp.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/MrCorehh/unraid-templates/main/netplexflix/wtwp.png</Icon>
   <ExtraParams>--user 99:100</ExtraParams>
 <DonateText>Buy the original developer a Coffee</DonateText>
