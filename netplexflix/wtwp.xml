@@ -17,7 +17,6 @@ Find a Movie or TV Show everyone wants to watch.</Overview>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/MrCorehh/unraid-templates/main/netplexflix/wtwp.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/MrCorehh/unraid-templates/main/netplexflix/wtwp.png</Icon>
-  <ExtraParams>--user 99:100</ExtraParams>
 <DonateText>Buy the original developer a Coffee</DonateText>
 <DonateLink>https://www.buymeacoffee.com/neekokeen</DonateLink>
   <Config Name="/app/data" Target="/app/data" Default="/mnt/user/appdata/wtwp" Mode="rw" Description="Persistent data storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/wtwp</Config>
@@ -25,4 +24,6 @@ Find a Movie or TV Show everyone wants to watch.</Overview>
   <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Australia/Brisbane</Config>
   <Config Name="DATA_PATH" Target="DATA_PATH" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/app/data</Config>
   <Config Name="NODE_ENV" Target="NODE_ENV" Default="production" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">production</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID for file permissions" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID for file permissions" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
 </Container>
